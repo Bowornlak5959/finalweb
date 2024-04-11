@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact us</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" 
+  rel="stylesheet"
+  />
+
+</style>
+</head>
+<body>
+<nav> 
+  <a 
+  class="logo"
+  href="index.html"
+  >
+  <img class="logo_image"src="image/logo.png">
+</a>
+<div class="container_menu">
+  <a 
+  class="container_menu"
+  href="index.html"
+>
+</a>
+<div class="container_menu">
+<a class="menu" href="index.html"> Home </a>
+<a class="menu" href="about.html"> About </a>
+<a class="menu" href="Myrecipe.html"> My Recipe </a>
+<a class="menu-active" href="Contact.html"> Contact </a>
+  </div>
+  </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <h1>Contact Us</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <br>
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address">
+      <br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="10" cols="30" placeholder="Enter your message"></textarea>
+      <br>
+      <button type="submit">Send</button>
+    </form>
+    <p><i>**OR**</i></p>
+    <p>You can also reach us at:</p>
+    <ul>
+      <li><b>Email:</b> K&C_Recipe@suic.su.ac.th</li>
+      <li><b>Phone:</b> (+66) 789-7898</li>
+    </ul>
+  </body>
+  </html>
+
+<style>
+* {
+  font-family: 'Poppins';
+}
+
+body
+{
+    height: 100vh;
+
+    background: linear-gradient(0.25turn, rgba(255, 255, 255, 0) 0%,rgba(225, 225, 225, 255) 100%), url(image/Image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+body 
+
+nav {
+  display: flex;
+  justify-content:space-between;
+}
+
+ h1 {
+    color:#FF922C;
+}
+
+.logo {
+display: block;
+width: 76px;
+height: 64px;
+}
+
+.logo_image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container_menu {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+margin-right: 51px;
+}
+
+.menu {
+font-size: 20px;
+font-weight: 500;
+color: #6C6A6A;
+
+text-decoration: none;
+}
+
+.menu:hover {
+  color: #FF922C;
+}
+
+.menu-active {
+font-size: 20px;
+font-weight: 500;
+color: #6C6A6A;
+
+
+text-decoration: none;
+color: #FF922C;
+
+pointer-events: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  width: 200px;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #FF922C;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #FF922C;
+}
+
+textarea {
+  resize: vertical;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 10px;
+}
+

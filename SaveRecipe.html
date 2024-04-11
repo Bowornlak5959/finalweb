@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Save recipe</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+
+  <style>
+    * {
+      font-family: 'Poppins';
+    }
+
+    body {
+      height: 100vh;
+
+      background: linear-gradient(0.25turn, rgba(255, 255, 255, 0) 0%, rgba(225, 225, 225, 255) 100%), url(/Users/lolita/Desktop/finalweb/image/karly-gomez-lK1Q5RyD6tc-unsplash.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    label {
+      width: 200px;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="url"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #FF922C;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #FF922C;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: block;
+      width: 76px;
+      height: 64px;
+    }
+
+    .logo_image {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .container_menu {
+      display: flex;
+      align-items: center;
+      gap: 76px;
+      margin-right: 51px;
+    }
+
+    .menu {
+      font-size: 20px;
+      font-weight: 500;
+      color: #6C6A6A;
+
+      text-decoration: none;
+    }
+
+    .menu:hover {
+      color: #FF922C;
+    }
+
+    .menu-active {
+      font-size: 20px;
+      font-weight: 500;
+      color: #6C6A6A;
+
+
+      text-decoration: none;
+      color: #FF922C;
+
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a class="logo" href="file:///Users/lolita/finalweb/index.html">
+      <img class="logo_image" src="/Users/lolita/Desktop/finalweb/image/logo.png" />
+    </a>
+    <div class="container_menu">
+      <a class="container_menu" href="file:///Users/lolita/finalweb/index.html">
+      </a>
+      <div class="container_menu">
+        <a class="menu" href="index.html"> HOME </a>
+        <a class="menu" href=""> About </a>
+        <a class="menu-active" href=""> My Recipe </a>
+        <a class="menu" href=""> Contact </a>
+      </div>
+  </nav>
+</body>
+
+</html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save Recipe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Save Recipe</h1>
+  <form>
+    <label for="recipeName">Recipe Name:</label>
+    <input type="text" id="recipeName" name="recipeName" placeholder="Enter recipe name">
+    <br>
+    <label for="recipeType">Recipe Type:</label>
+    <select id="recipeType" name="recipeType">
+      <option value="dessert">Dessert</option>
+      <option value="appetizer">Appetizer</option>
+      <option value="mainCourse">Main Course</option>
+    </select>
+    <br>
+    <label for="cookingTime">Cooking Time:</label>
+    <input type="text" id="cookingTime" name="cookingTime" placeholder="Enter cooking time">
+    <br>
+    <label for="calories">Calories:</label>
+    <input type="number" id="calories" name="calories" placeholder="Enter calorie count">
+    <br>
+    <label for="recipeVideo">Recipe Video URL (Optional):</label>
+    <input type="url" id="recipeVideo" name="recipeVideo" placeholder="Enter recipe video URL">
+    <br>
+    <label for="recipeImage">Recipe Image:</label>
+    <input type="file" id="recipeImage" name="recipeImage">
+    <br>
+    <label for="directions">Directions:</label>
+    <textarea id="directions" name="directions" rows="10" cols="30" placeholder="Enter recipe directions"></textarea>
+    <br>
+    <label for="ingredients">Ingredients:</label>
+    <textarea id="ingredients" name="ingredients" rows="10" cols="30" placeholder="Enter recipe ingredients"></textarea>
+    <br>
+    <button type="submit">Save Recipe</button>
+  </form>
+</body>
+
+</html>
